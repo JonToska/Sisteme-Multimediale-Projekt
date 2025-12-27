@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flights to Albania</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <header>
+        <h1>Name</h1>
+        <div class="nav-button-container">
+            <div class="nav-button">Home</div>
+            <div class="nav-button">
+                Destinations &#x25BE;
+                <div class="dropdown">
+                    <div class="dropdown-item">Berat</div>
+                    <div class="dropdown-item">Sarande</div>
+                    <div class="dropdown-item">Lumi Shales</div>
+                    <div class="dropdown-item">Theth</div>
+                    <div class="dropdown-item">Voskopoje</div>
+                </div>
+            </div>
+            <div class="nav-button">Categories &#x25BE;</div>
+            <div class="nav-button">Gallery</div>
+            <div class="nav-button">About Us</div>
+            <div class="nav-button">Contact</div>
+        </div>
+        
+    </header>
+
+<div class="hero container">
+  <h1>Flights to Albania</h1>
+  <p>Find common flight routes from major European cities to Tirana International Airport, including average travel times and prices.</p>
+</div>
+
+<div class="section light container">
+  <label>Maximum price (€): </label>
+  <input type="number" id="price" value="200">
+  <button onclick="filterFlights()">Filter</button>
+
+  <table id="table" border="1" width="100%" cellpadding="10" cellspacing="0">
+    <tr>
+      <th>From</th><th>Time</th><th>Avg Price</th><th>Airline</th><th>Website</th>
+    </tr>
+    <tr data-price="100"><td>Rome</td><td>1h 20m</td><td>100€</td><td>ITA Airways</td><td><a href="https://www.ita-airways.com" target="_blank">Visit</a></td></tr>
+    <tr data-price="120"><td>Milan</td><td>1h 45m</td><td>120€</td><td>Wizz Air</td><td><a href="https://wizzair.com" target="_blank">Visit</a></td></tr>
+    <tr data-price="200"><td>London</td><td>3h 10m</td><td>200€</td><td>British Airways</td><td><a href="https://www.britishairways.com" target="_blank">Visit</a></td></tr>
+  </table>
+</div>
+
+<script>
+function filterFlights() {
+  var max = document.getElementById("price").value;
+  var rows = document.querySelectorAll("#table tr[data-price]");
+  rows.forEach(function(r) {
+    r.style.display = r.dataset.price <= max ? "" : "none";
+  });
+}
+</script>
+
+<footer><div class="container">© 2025 Visit Albania</div></footer>
+</body>
+</html>
