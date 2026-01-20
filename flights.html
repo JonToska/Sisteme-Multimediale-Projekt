@@ -39,21 +39,104 @@
   <button onclick="filterFlights()">Filter</button>
 
   <table id="table" border="1" width="100%" cellpadding="10" cellspacing="0">
-    <tr>
-      <th>From</th><th>Time</th><th>Avg Price</th><th>Airline</th><th>Website</th>
-    </tr>
-    <tr data-price="100"><td>Rome</td><td>1h 20m</td><td>100€</td><td>ITA Airways</td><td><a href="https://www.ita-airways.com" target="_blank">Visit</a></td></tr>
-    <tr data-price="120"><td>Milan</td><td>1h 45m</td><td>120€</td><td>Wizz Air</td><td><a href="https://wizzair.com" target="_blank">Visit</a></td></tr>
-    <tr data-price="200"><td>London</td><td>3h 10m</td><td>200€</td><td>British Airways</td><td><a href="https://www.britishairways.com" target="_blank">Visit</a></td></tr>
-  </table>
+  <tr>
+    <th>From</th>
+    <th>Time</th>
+    <th>Avg Price</th>
+    <th>Airline</th>
+    <th>Website</th>
+  </tr>
+
+  <tr data-price="100">
+    <td>Rome</td>
+    <td>1h 20m</td>
+    <td>100€</td>
+    <td>ITA Airways</td>
+    <td><a href="https://www.ita-airways.com" target="_blank">Visit</a></td>
+  </tr>
+
+  <tr data-price="120">
+    <td>Milan</td>
+    <td>1h 45m</td>
+    <td>120€</td>
+    <td>Wizz Air</td>
+    <td><a href="https://wizzair.com" target="_blank">Visit</a></td>
+  </tr>
+
+  <tr data-price="90">
+    <td>Bologna</td>
+    <td>1h 30m</td>
+    <td>90€</td>
+    <td>Ryanair</td>
+    <td><a href="https://www.ryanair.com" target="_blank">Visit</a></td>
+  </tr>
+
+  <tr data-price="110">
+    <td>Vienna</td>
+    <td>1h 40m</td>
+    <td>110€</td>
+    <td>Austrian Airlines</td>
+    <td><a href="https://www.austrian.com" target="_blank">Visit</a></td>
+  </tr>
+
+  <tr data-price="130">
+    <td>Munich</td>
+    <td>1h 50m</td>
+    <td>130€</td>
+    <td>Lufthansa</td>
+    <td><a href="https://www.lufthansa.com" target="_blank">Visit</a></td>
+  </tr>
+
+  <tr data-price="150">
+    <td>Paris</td>
+    <td>2h 20m</td>
+    <td>150€</td>
+    <td>Air France</td>
+    <td><a href="https://www.airfrance.com" target="_blank">Visit</a></td>
+  </tr>
+
+  <tr data-price="140">
+    <td>Amsterdam</td>
+    <td>2h 30m</td>
+    <td>140€</td>
+    <td>Transavia</td>
+    <td><a href="https://www.transavia.com" target="_blank">Visit</a></td>
+  </tr>
+
+  <tr data-price="170">
+    <td>Zurich</td>
+    <td>1h 55m</td>
+    <td>170€</td>
+    <td>SWISS</td>
+    <td><a href="https://www.swiss.com" target="_blank">Visit</a></td>
+  </tr>
+
+  <tr data-price="200">
+    <td>London</td>
+    <td>3h 10m</td>
+    <td>200€</td>
+    <td>British Airways</td>
+    <td><a href="https://www.britishairways.com" target="_blank">Visit</a></td>
+  </tr>
+
+  <tr data-price="180">
+    <td>Barcelona</td>
+    <td>2h 25m</td>
+    <td>180€</td>
+    <td>Vueling</td>
+    <td><a href="https://www.vueling.com" target="_blank">Visit</a></td>
+  </tr>
+</table>
 </div>
 
 <script>
 function filterFlights() {
-  var max = document.getElementById("price").value;
+  var max = parseInt(document.getElementById("price").value);
   var rows = document.querySelectorAll("#table tr[data-price]");
+
   rows.forEach(function(r) {
-    r.style.display = r.dataset.price <= max ? "" : "none";
+    var price = parseInt(r.dataset.price);
+    r.style.display = price <= max ? "" : "none";
   });
 }
 </script>
