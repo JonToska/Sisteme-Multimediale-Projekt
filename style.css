@@ -1,6 +1,10 @@
 body{
     margin: 0;
 }
+a{
+   text-decoration: none;
+   color: inherit; 
+}
 header{
     background-color: rgb(7, 7, 22);
     display: flex;
@@ -37,6 +41,7 @@ h1{
 video{
     width: 100%;
     object-fit: cover;
+    z-index: -1;
 }
 .intro{
     position: absolute;
@@ -106,4 +111,28 @@ video{
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+}
+.introduction-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 -25px 20px rgb(255, 255, 255);
+}
+.introduction{
+    align-self: center;
+    width: 80%;
+    padding: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 80px;
+}
+.introduction::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgb(195, 195, 195);
+    margin-bottom: 20px;    
 }
