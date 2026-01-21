@@ -9,18 +9,20 @@
  <header>
         <h1>Name</h1>
         <div class="nav-button-container">
-            <div class="nav-button">Home</div>
+            <a href="homePage.html"><div class="nav-button">Home</div></a>
             <div class="nav-button">
                 Destinations &#x25BE;
                 <div class="dropdown">
-                    <div class="dropdown-item">Berat</div>
-                    <div class="dropdown-item">Sarande</div>
+                    <a href="berat.html"><div class="dropdown-item">Berat</div></a>
+                    <a href="sarande.html"><div class="dropdown-item">Sarande</div></a>
                     <div class="dropdown-item">Lumi Shales</div>
                     <div class="dropdown-item">Theth</div>
                     <div class="dropdown-item">Voskopoje</div>
                 </div>
             </div>
-            <div class="nav-button">Categories &#x25BE;</div>
+            <div class="nav-button-container">
+               <a href="flights.html"><div class="nav-button">Flights</div></a>
+            </div>
             <div class="nav-button">Gallery</div>
             <div class="nav-button">About Us</div>
             <div class="nav-button">Contact</div>
@@ -47,7 +49,9 @@
       <img src="Saranda Images/Ksamil Islands.jpg">
       <div class="place-text">
         <h3>Ksamil Islands</h3>
-        <p>Just a short drive from Sarandë, Ksamil is famous for its white sandy beaches and turquoise waters, often compared to tropical destinations.</p>
+        <p>Ksamil is a small coastal village near Sarandë, famous for its white sandy beaches and clear turquoise waters.
+           It features several small islands just offshore, calm seas ideal for swimming, and beautiful views that make it one
+           of the most visited seaside destinations in southern Albania.</p>
         <a href="https://maps.google.com/?q=Ksamil+Islands" target="_blank"><button>View Location</button></a>
       </div>
     </div>
@@ -56,7 +60,9 @@
       <img src="Saranda Images/Butrint National Park.jpg">
       <div class="place-text">
         <h3>Butrint National Park</h3>
-        <p>A UNESCO World Heritage Site featuring ancient Greek and Roman ruins surrounded by lush nature, offering a unique blend of history and scenery.</p>
+        <p>Butrint is an ancient archaeological site surrounded by nature, located just south of Sarandë near the Greek border.
+           With ruins dating back over 2,500 years, it includes a Roman theater, city walls, temples, and offers a unique blend
+           of history, culture, and natural beauty.</p>
         <a href="https://maps.google.com/?q=Butrint+National+Park" target="_blank"><button>View Location</button></a>
       </div>
     </div>
@@ -68,13 +74,12 @@
   <div class="place-text">
     <h3>The Blue Eye (Syri i Kaltër)</h3>
     <p>
-      The Blue Eye is one of Albania’s most fascinating natural attractions, located about 25 kilometers from Sarandë.
-      This natural freshwater spring is famous for its deep blue color and crystal-clear water, which appears to change
-      shades depending on the sunlight.
-      <br><br>
-      Surrounded by lush greenery, the Blue Eye is a peaceful destination that offers visitors a unique glimpse into
-      Albania’s untouched nature. Although swimming is not allowed due to the strong underwater currents, the area
-      remains a popular spot for photography and relaxation.
+      <p>
+      The Blue Eye is a stunning natural spring located near Sarandë, famous for its deep blue color and crystal-clear water.
+      Surrounded by lush greenery, it is one of Albania’s most beautiful natural landmarks and a popular spot for visitors
+      seeking peaceful scenery and unique photography opportunities.
+      </p>
+
     </p>
     <a href="https://maps.google.com/?q=Syri+i+Kalter+Albania" target="_blank">
       <button>View Location</button>
@@ -108,6 +113,49 @@
   </div>
 </div>
 
-<footer><div class="container">© 2025 Visit Albania – Sarandë</div></footer>
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>About</h3>
+      <p>Find your next adventure in <br> ALBANIA with us. </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Destinations</h3>
+      <ul>
+        <li><a href="berat.html">Berat</a></li>
+        <li><a href="sarande.html">Sarande</a></li>
+        <li><a href="#">Lumi Shales</a></li>
+        <li><a href="#">Theth</a></li>
+        <li><a href="#">Voskopoje</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact us</h3>
+      <ul>
+        <li>Email: example@mail.com</li>
+        <li>Phone: +355 61 234 5678</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
