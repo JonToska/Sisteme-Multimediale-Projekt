@@ -140,7 +140,7 @@ video{
 /* Footer Styles */
 .site-footer {
   background-color: #111;
-  color: #ddd;
+  color: #060505;
   padding: 40px 0 20px;
   font-family: Arial, sans-serif;
 }
@@ -182,7 +182,7 @@ video{
 }
 
 .footer-section a:hover {
-  color: #fff;
+  color: #050404;
 }
 
 .footer-bottom {
