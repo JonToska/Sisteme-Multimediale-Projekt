@@ -9,18 +9,20 @@
  <header>
         <h1>Name</h1>
         <div class="nav-button-container">
-            <div class="nav-button">Home</div>
+            <a href="homePage.html"><div class="nav-button">Home</div></a>
             <div class="nav-button">
                 Destinations &#x25BE;
                 <div class="dropdown">
-                    <div class="dropdown-item">Berat</div>
-                    <div class="dropdown-item">Sarande</div>
+                    <a href="berat.html"><div class="dropdown-item">Berat</div></a>
+                    <a href="sarande.html"><div class="dropdown-item">Sarande</div></a>
                     <div class="dropdown-item">Lumi Shales</div>
                     <div class="dropdown-item">Theth</div>
-                    <div class="dropdown-item">Voskopoje</div>
+                   <div class="dropdown-item">Voskopoje</div>
                 </div>
             </div>
-            <div class="nav-button">Categories &#x25BE;</div>
+            <div class="nav-button-container">
+               <a href="flights.html"><div class="nav-button">Flights</div></a>
+            </div>
             <div class="nav-button">Gallery</div>
             <div class="nav-button">About Us</div>
             <div class="nav-button">Contact</div>
@@ -30,7 +32,13 @@
 
 <div class="hero container">
   <h1>Berat</h1>
-  <p>Known as the “City of a Thousand Windows”, Berat is one of Albania’s most historic and picturesque destinations.</p>
+  <p>Berat, known as the “City of a Thousand Windows,” is one of Albania’s most important historical and cultural destinations.
+    With a history spanning more than two millennia, the city is famous for its well-preserved Ottoman architecture,
+    stone houses stacked along the hillside, and its unique harmony between nature and human settlement.
+    <br><br>
+    Designated as a UNESCO World Heritage Site, Berat offers visitors a journey through time, where ancient castles,
+    Byzantine churches, and traditional neighborhoods coexist. Walking through Berat feels like exploring an open-air
+    museum, making it a must-visit destination for history lovers and cultural travelers.</p>
 </div>
 
 <div class="section soft">
@@ -46,7 +54,7 @@
       </div>
     </div>
 
-    <div class="place reverse">
+    <div class="place">
       <img src="Berat Images/Ethnographic Museum.jpg">
       <div class="place-text">
         <h3>Ethnographic Museum</h3>
@@ -70,7 +78,7 @@
   <div class="container">
     <h2>Recommended Restaurants</h2>
 
-    <div class="place">
+    <div class="place reverse">
       <img src="Berat Images/Homemade Food Lili.jpg">
       <div class="place-text">
         <h3>Homemade Food Lili</h3>
@@ -90,6 +98,49 @@
   </div>
 </div>
 
-<footer><div class="container">© 2025 Visit Albania – Berat</div></footer>
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>About</h3>
+      <p>Find your next adventure in <br> ALBANIA with us. </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Destinations</h3>
+      <ul>
+        <li><a href="berat.html">Berat</a></li>
+        <li><a href="sarande.html">Sarande</a></li>
+        <li><a href="#">Lumi Shales</a></li>
+        <li><a href="#">Theth</a></li>
+        <li><a href="#">Voskopoje</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact us</h3>
+      <ul>
+        <li>Email: example@mail.com</li>
+        <li>Phone: +355 61 234 5678</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>

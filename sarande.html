@@ -9,18 +9,20 @@
  <header>
         <h1>Name</h1>
         <div class="nav-button-container">
-            <div class="nav-button">Home</div>
+            <a href="homePage.html"><div class="nav-button">Home</div></a>
             <div class="nav-button">
                 Destinations &#x25BE;
                 <div class="dropdown">
-                    <div class="dropdown-item">Berat</div>
-                    <div class="dropdown-item">Sarande</div>
+                    <a href="berat.html"><div class="dropdown-item">Berat</div></a>
+                    <a href="sarande.html"><div class="dropdown-item">Sarande</div></a>
                     <div class="dropdown-item">Lumi Shales</div>
                     <div class="dropdown-item">Theth</div>
                     <div class="dropdown-item">Voskopoje</div>
                 </div>
             </div>
-            <div class="nav-button">Categories &#x25BE;</div>
+            <div class="nav-button-container">
+               <a href="flights.html"><div class="nav-button">Flights</div></a>
+            </div>
             <div class="nav-button">Gallery</div>
             <div class="nav-button">About Us</div>
             <div class="nav-button">Contact</div>
@@ -30,7 +32,13 @@
 
 <div class="hero container">
   <h1>Sarandë</h1>
-  <p>A vibrant coastal city on the Ionian Sea, known for crystal-clear waters, beaches, and nearby ancient ruins.</p>
+  <p>Sarandë is one of Albania’s most popular seaside destinations, located along the stunning Ionian coast in the south
+    of the country. Known for its crystal-clear waters, sunny climate, and relaxed atmosphere, the city attracts visitors
+    from all over Europe, especially during the summer months.
+    <br><br>
+    Beyond its beaches, Sarandë is a gateway to some of Albania’s most significant natural and historical attractions,
+    including ancient ruins, national parks, and pristine coastal villages. The combination of natural beauty,
+    rich history, and modern tourism infrastructure makes Sarandë an ideal destination for both relaxation and exploration.</p>
 </div>
 
 <div class="section soft">
@@ -41,17 +49,41 @@
       <img src="Saranda Images/Ksamil Islands.jpg">
       <div class="place-text">
         <h3>Ksamil Islands</h3>
-        <p>Just a short drive from Sarandë, Ksamil is famous for its white sandy beaches and turquoise waters, often compared to tropical destinations.</p>
+        <p>Ksamil is a small coastal village near Sarandë, famous for its white sandy beaches and clear turquoise waters.
+           It features several small islands just offshore, calm seas ideal for swimming, and beautiful views that make it one
+           of the most visited seaside destinations in southern Albania.</p>
         <a href="https://maps.google.com/?q=Ksamil+Islands" target="_blank"><button>View Location</button></a>
       </div>
     </div>
 
-    <div class="place reverse">
+    <div class="place">
       <img src="Saranda Images/Butrint National Park.jpg">
       <div class="place-text">
         <h3>Butrint National Park</h3>
-        <p>A UNESCO World Heritage Site featuring ancient Greek and Roman ruins surrounded by lush nature, offering a unique blend of history and scenery.</p>
+        <p>Butrint is an ancient archaeological site surrounded by nature, located just south of Sarandë near the Greek border.
+           With ruins dating back over 2,500 years, it includes a Roman theater, city walls, temples, and offers a unique blend
+           of history, culture, and natural beauty.</p>
         <a href="https://maps.google.com/?q=Butrint+National+Park" target="_blank"><button>View Location</button></a>
+      </div>
+    </div>
+  
+
+
+    <div class="place">
+  <img src="Saranda Images/Syri i Kalter.jpg">
+  <div class="place-text">
+    <h3>The Blue Eye (Syri i Kaltër)</h3>
+    <p>
+      <p>
+      The Blue Eye is a stunning natural spring located near Sarandë, famous for its deep blue color and crystal-clear water.
+      Surrounded by lush greenery, it is one of Albania’s most beautiful natural landmarks and a popular spot for visitors
+      seeking peaceful scenery and unique photography opportunities.
+      </p>
+
+    </p>
+    <a href="https://maps.google.com/?q=Syri+i+Kalter+Albania" target="_blank">
+      <button>View Location</button>
+    </a>
       </div>
     </div>
   </div>
@@ -61,7 +93,7 @@
   <div class="container">
     <h2>Recommended Restaurants</h2>
 
-    <div class="place">
+    <div class="place reverse">
       <img src="Saranda Images/Haxhi Restaurant.jpg">
       <div class="place-text">
         <h3>Haxhi</h3>
@@ -81,6 +113,49 @@
   </div>
 </div>
 
-<footer><div class="container">© 2025 Visit Albania – Sarandë</div></footer>
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>About</h3>
+      <p>Find your next adventure in <br> ALBANIA with us. </p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Destinations</h3>
+      <ul>
+        <li><a href="berat.html">Berat</a></li>
+        <li><a href="sarande.html">Sarande</a></li>
+        <li><a href="#">Lumi Shales</a></li>
+        <li><a href="#">Theth</a></li>
+        <li><a href="#">Voskopoje</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact us</h3>
+      <ul>
+        <li>Email: example@mail.com</li>
+        <li>Phone: +355 61 234 5678</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 All rights reserved.</p>
+  </div>
+</footer>
+
 </body>
 </html>
