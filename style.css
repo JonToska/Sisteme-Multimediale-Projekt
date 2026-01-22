@@ -141,6 +141,7 @@ video{
 }
 .photos-container{
     display: flex;
+    align-items: stretch;
     justify-content: space-around;
     padding: 40px;
     margin-bottom: 60px;
@@ -148,10 +149,12 @@ video{
 }
 .photo{
     background-color: #fff9f3;
+    position: relative;
     padding: 15px;
     display: flex;
     flex-direction: column;
-    width: 270px;
+    min-width: 250px;
+    max-width: 400px;
     border-radius: 5px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
@@ -162,6 +165,16 @@ video{
     transform: translateY(-5px);
     background-color: #dfd6ce;
 
+}
+.photo:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: rgb(217, 202, 192);
+    right: -78px;
+    top: 0;
 }
 .photo img{
     width: 100%;
@@ -225,7 +238,7 @@ h2::after{
 
 .site-footer {
   background-color: #111;
-  color: #ddd;
+  color: #060505;
   padding: 40px 0 20px;
   font-family: Arial, sans-serif;
 }
@@ -267,7 +280,7 @@ h2::after{
 }
 
 .footer-section a:hover {
-  color: #fff;
+  color: #050404;
 }
 
 .footer-bottom {

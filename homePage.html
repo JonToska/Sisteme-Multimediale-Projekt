@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Name</h1>
+        <h1>AlbTravel</h1>
         <div class="nav-button-container">
             <div class="nav-button">Home</div>
             <div class="nav-button">
@@ -16,7 +16,7 @@
                 <div class="dropdown">
                     <a href="berat.html"><div class="dropdown-item">Berat</div></a>
                     <a href="sarande.html"><div class="dropdown-item">Sarande</div></a>
-                    <a href="lumi-shales.html"><div class="dropdown-item">Lumi Shales</div></a>
+                    <a href="LumiShales.html"><div class="dropdown-item">Lumi Shales</div></a>
                     <a href="theth.html"><div class="dropdown-item">Theth</div></a>
                     <a href="voskopoje.html"><div class="dropdown-item">Voskopoje</div></a>
                 </div>
@@ -44,7 +44,7 @@
             Welcome to Albania, a hidden gem in the heart of the Balkans. From crystal-clear beaches along the Ionian and Adriatic seas to dramatic mountains, ancient ruins, and vibrant cities, Albania offers rich history, warm hospitality, and unforgettable landscapes—all still wonderfully undiscovered.
         </div>
     </div>
-    <h2>MOST POPULAR DESTINATIONS</h2>
+    <h2 style="margin-top: 300px;">MOST POPULAR DESTINATIONS</h2>
     <div class="photos-container">
         <div class="photo">
             <img src="Berat Images/BeratMainHomePage.jpg">
@@ -53,15 +53,15 @@
             <button class="expander toggle">Read More</button>
         </div>
         <div class="photo"> 
-            <img src="Berat Images/BeratMainHomePage.jpg">
+            <img src="Theth Images/Blue3.jpg">
             <h3>Theth</h3>
-            <p class="text">Berat, known as the “City of a Thousand Windows,” is one of Albania’s most important historical and cultural destinations. With a history spanning more than two millennia, the city is famous for its well-preserved Ottoman architecture, stone houses stacked along the hillside, and its unique harmony between nature and human settlement.</p>
+            <p class="text">Located in the Albanian Alps, Theth is a remote mountain village known for its dramatic landscapes, traditional stone houses, and untouched natural beauty, making it a perfect escape for nature lovers and hikers. Nestled among towering peaks and surrounded by lush valleys, the village offers breathtaking views, scenic trails, and a glimpse into the region’s rich cultural heritage, where traditional ways of life are still preserved.</p>
             <button class="expander toggle">Read More</button>
         </div> 
         <div class="photo"> 
-             <img src="Berat Images/BeratMainHomePage.jpg">
+             <img src="LumiShales Images/Blue.jpg">
             <h3>Lumi Shales</h3>
-            <p class="text">Berat, known as the “City of a Thousand Windows,” is one of Albania’s most important historical and cultural destinations. With a history spanning more than two millennia, the city is famous for its well-preserved Ottoman architecture, stone houses stacked along the hillside, and its unique harmony between nature and human settlement.</p>
+            <p class="text">Lumi i Shalës is a crystal-clear mountain river in northern Albania, famous for its turquoise waters, dramatic canyon views, and untouched natural beauty. Surrounded by steep rocky cliffs and lush forests, it has become a popular summer destination for visitors looking to swim, kayak, or simply relax in a peaceful and pristine environment. Many describe it as the “Albanian Thailand” due to its exotic colors and stunning scenery.</p>
             <button class="expander toggle">Read More</button>
         </div>
     </div>
@@ -76,7 +76,12 @@
     place.forEach((place, index) => {
         place.addEventListener("click", (e) => {
             if(!e.target.classList.contains("toggle")){
-                window.location.href = "berat.html";
+                if(index === 0)
+                    window.location.href = "berat.html";
+                else if(index === 1)
+                    window.location.href = "theth.html";
+                else if(index === 2)
+                    window.location.href = "LumiShales.html";
             }
         })
     })
